@@ -1,0 +1,7 @@
+version: 43.0.9
+pageUuid: 552b61d4-6a8b-11ed-a29f-739bfbf5449d
+appTemplate:
+  plugins:
+    ordered: []
+  rootScreen: null
+  version: 2.99.6
