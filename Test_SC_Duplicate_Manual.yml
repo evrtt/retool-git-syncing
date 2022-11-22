@@ -98,7 +98,7 @@ appTemplate:
                 - showInEditor: false
                 - verticalAlign: center
                 - tooltipText: ''
-                - value: 👋 **Hello {{ current_user.firstName || 'friend' }}!**
+                - value: '{{retoolContext.appUuid}}'
                 - disableMarkdown: false
                 - overflowType: scroll
                 - maintainSpaceWhenHidden: false
@@ -109,6 +109,20 @@ appTemplate:
                 height: 0.6
                 width: 3
             createdAt: 2022-11-22T17:38:35.520Z
+      - $main:
+          pluginTemplate:
+            id: $main
+            type: frame
+            subtype: Frame
+            template:
+              ordered:
+                - type: main
+                - sticky: false
+                - isHiddenOnDesktop: false
+                - isHiddenOnMobile: false
+            style:
+              ordered: []
+            createdAt: 2022-11-22T17:38:35.590Z
   rootScreen: null
   version: 2.99.6
   markdownLinkBehavior: auto
