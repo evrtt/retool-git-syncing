@@ -3,29 +3,40 @@ pageUuid: 7ad26076-6a8c-11ed-b32f-afcb8b3dec69
 appTemplate:
   plugins:
     ordered:
+      - $main:
+          pluginTemplate:
+            id: $main
+            type: frame
+            subtype: Frame
+            template:
+              ordered:
+                - type: main
+                - sticky: false
+                - isHiddenOnDesktop: false
+                - isHiddenOnMobile: false
+            style:
+              ordered: []
+              createdAt: 2022-11-22T17:38:50.854Z
+            createdAt: 2022-11-22T18:42:21.087Z
       - query1:
           pluginTemplate:
             id: query1
             type: datasource
-            subtype: RESTQuery
-            resourceName: de325110-63f3-4381-8f15-638d198d006e
-            resourceDisplayName: Google
+            subtype: SqlQueryUnified
+            resourceName: 0aeef98e-c302-4b84-b3dd-a3f53c242314
             template:
               ordered:
                 - queryRefreshTime: ''
-                - paginationLimit: ''
-                - body: ''
+                - records: ''
                 - lastReceivedFromResourceAt: null
+                - databasePasswordOverride: ''
                 - queryDisabledMessage: ''
                 - successMessage: ''
                 - queryDisabled: ''
                 - playgroundQuerySaveId: latest
                 - resourceNameOverride: ''
                 - runWhenModelUpdates: true
-                - paginationPaginationField: ''
-                - headers: ''
                 - showFailureToaster: true
-                - paginationEnabled: false
                 - query: ''
                 - playgroundQueryUuid: ''
                 - playgroundQueryId: null
@@ -33,14 +44,20 @@ appTemplate:
                 - privateParams: []
                 - runWhenPageLoadsDelay: ''
                 - data: null
+                - recordId: ''
                 - importedQueryInputs:
                     ordered: []
                 - isImported: false
                 - showSuccessToaster: true
+                - dataArray: []
                 - cacheKeyTtl: ''
-                - cookies: ''
+                - filterBy: ''
+                - databaseHostOverride: ''
                 - metadata: null
+                - editorMode: sql
+                - actionType: ''
                 - changesetObject: ''
+                - shouldUseLegacySql: false
                 - errorTransformer: >-
                     // The variable 'data' allows you to reference the request's
                     data in the transformer. 
@@ -48,6 +65,7 @@ appTemplate:
                     // example: return data.find(element => element.isError)
 
                     return data.error
+                - databaseNameOverride: ''
                 - confirmationMessage: null
                 - isFetching: false
                 - changeset: ''
@@ -56,13 +74,14 @@ appTemplate:
                 - resourceTypeOverride: null
                 - watchedParams: []
                 - enableErrorTransformer: false
+                - enableBulkUpdates: false
                 - showLatestVersionUpdatedWarning: false
-                - paginationDataField: ''
                 - timestamp: 0
                 - importedQueryDefaults:
                     ordered: []
                 - enableTransformer: false
                 - showUpdateSetValueDynamicallyToggle: true
+                - bulkUpdatePrimaryKey: ''
                 - runWhenPageLoads: false
                 - transformer: >-
                     // type your code here
@@ -72,18 +91,20 @@ appTemplate:
 
                     return data
                 - events: []
+                - tableName: ''
                 - queryTimeout: '10001'
                 - requireConfirmation: false
-                - type: GET
                 - queryFailureConditions: ''
                 - changesetIsObject: false
                 - enableCaching: false
                 - allowedGroups: []
-                - bodyType: json
+                - databaseUsernameOverride: ''
+                - shouldEnableBatchQuerying: false
+                - doNotThrowOnNoOp: false
                 - queryThrottleTime: '750'
                 - updateSetValueDynamically: false
                 - notificationDuration: ''
-            createdAt: 2022-11-22T17:38:30.675Z
+            createdAt: 2022-11-22T17:38:03.564Z
       - text1:
           pluginTemplate:
             id: text1
@@ -106,23 +127,11 @@ appTemplate:
               ordered: []
             position2:
               position2:
+                row: 2.4
+                col: 6
                 height: 0.6
                 width: 3
-            createdAt: 2022-11-22T17:38:35.520Z
-      - $main:
-          pluginTemplate:
-            id: $main
-            type: frame
-            subtype: Frame
-            template:
-              ordered:
-                - type: main
-                - sticky: false
-                - isHiddenOnDesktop: false
-                - isHiddenOnMobile: false
-            style:
-              ordered: []
-            createdAt: 2022-11-22T17:38:35.590Z
+            createdAt: 2022-11-22T17:38:50.782Z
   rootScreen: null
   version: 2.99.6
   markdownLinkBehavior: auto
