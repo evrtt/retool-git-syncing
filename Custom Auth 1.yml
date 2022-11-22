@@ -1,0 +1,164 @@
+version: 43.0.9
+pageUuid: 7d1df958-2fa4-11ed-8edf-cf475cca063f
+appTemplate:
+  plugins:
+    ordered:
+      - $main:
+          pluginTemplate:
+            id: $main
+            type: frame
+            subtype: Frame
+            template:
+              ordered:
+                - type: main
+                - sticky: false
+            style:
+              ordered: []
+            createdAt: 2022-09-19T18:31:40.992Z
+      - query2:
+          pluginTemplate:
+            id: query2
+            type: datasource
+            subtype: RESTQuery
+            resourceName: 05609d26-cc32-4ac2-90b0-2be6401cad37
+            template:
+              ordered:
+                - queryRefreshTime: ''
+                - paginationLimit: ''
+                - body: ''
+                - lastReceivedFromResourceAt: null
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: latest
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: true
+                - paginationPaginationField: ''
+                - headers: ''
+                - showFailureToaster: true
+                - paginationEnabled: false
+                - query: ''
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: null
+                - error: null
+                - privateParams: []
+                - runWhenPageLoadsDelay: ''
+                - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - isImported: false
+                - showSuccessToaster: true
+                - cacheKeyTtl: ''
+                - cookies: ''
+                - metadata: null
+                - changesetObject: ''
+                - errorTransformer: >-
+                    // The variable 'data' allows you to reference the request's
+                    data in the transformer. 
+
+                    // example: return data.find(element => element.isError)
+
+                    return data.error
+                - confirmationMessage: null
+                - isFetching: false
+                - changeset: ''
+                - rawData: null
+                - queryTriggerDelay: '0'
+                - resourceTypeOverride: null
+                - watchedParams: []
+                - enableErrorTransformer: false
+                - showLatestVersionUpdatedWarning: false
+                - paginationDataField: ''
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - showUpdateSetValueDynamicallyToggle: true
+                - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - events: []
+                - queryTimeout: '10001'
+                - requireConfirmation: false
+                - type: GET
+                - queryFailureConditions: ''
+                - changesetIsObject: false
+                - enableCaching: false
+                - allowedGroups: []
+                - bodyType: json
+                - queryThrottleTime: '750'
+                - updateSetValueDynamically: false
+                - notificationDuration: ''
+            createdAt: 2022-09-08T17:48:09.756Z
+      - switch1:
+          pluginTemplate:
+            id: switch1
+            type: widget
+            subtype: SwitchWidget2
+            template:
+              ordered:
+                - hidden: false
+                - customValidation: ''
+                - hideValidationMessage: false
+                - validationMessage: ''
+                - showInEditor: false
+                - tooltipText: ''
+                - labelAlign: left
+                - formDataKey: '{{ self.id }}'
+                - value: false
+                - labelCaption: ''
+                - label: Label
+                - _validate: false
+                - invalid: false
+                - events:
+                    ordered: []
+                - disabled: false
+                - labelPosition: right
+                - labelWrap: false
+                - maintainSpaceWhenHidden: false
+                - required: false
+            style:
+              ordered: []
+            position2:
+              position2:
+                row: 5
+                col: 7
+                height: 0.6
+                width: 3
+            createdAt: 2022-09-19T18:31:52.728Z
+      - text1:
+          pluginTemplate:
+            id: text1
+            type: widget
+            subtype: TextWidget2
+            template:
+              ordered:
+                - heightType: auto
+                - horizontalAlign: left
+                - hidden: false
+                - imageWidth: fit
+                - showInEditor: false
+                - verticalAlign: center
+                - tooltipText: ''
+                - value: 👋 **Hello {{ current_user.firstName || 'friend' }}!**
+                - disableMarkdown: false
+                - overflowType: scroll
+                - maintainSpaceWhenHidden: false
+            style:
+              ordered: []
+            position2:
+              position2:
+                row: 3.4
+                col: 9
+                height: 0.6
+                width: 3
+            createdAt: 2022-09-19T18:31:40.960Z
+  queryStatusVisibility: false
+  rootScreen: null
+  version: 2.97.4
+  markdownLinkBehavior: auto
