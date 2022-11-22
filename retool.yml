@@ -1,0 +1,34 @@
+version: 43.0.9
+pageUuid: 124d9514-6a93-11ed-9e12-7f19a38bd185
+appTemplate:
+  plugins:
+    ordered:
+      - query1:
+          pluginTemplate:
+            id: query1
+            type: datasource
+            subtype: RESTQuery
+            resourceName: de325110-63f3-4381-8f15-638d198d006e
+            resourceDisplayName: Google
+            template:
+              queryRefreshTime: ''
+              queryDisabledMessage: ''
+              successMessage: ''
+              queryDisabled: ''
+              resourceNameOverride: ''
+              runWhenModelUpdates: true
+              query: ''
+              privateParams: []
+              data: null
+              showSuccessToaster: true
+              confirmationMessage: null
+              watchedParams: []
+              timestamp: 0
+              runWhenPageLoads: false
+              queryTimeout: '10001'
+              requireConfirmation: false
+              queryThrottleTime: '750'
+            createdAt: 2022-11-22T18:25:41.808Z
+  rootScreen: null
+  version: 2.99.6
+  markdownLinkBehavior: auto
