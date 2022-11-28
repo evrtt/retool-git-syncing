@@ -8,7 +8,8 @@ appTemplate:
             id: query1
             type: datasource
             subtype: RESTQuery
-            resourceName: REST-WithoutResource
+            resourceName: de325110-63f3-4381-8f15-638d198d006e
+            resourceDisplayName: Google
             template:
               ordered:
                 - queryRefreshTime: ''
@@ -26,7 +27,7 @@ appTemplate:
                 - showFailureToaster: true
                 - paginationEnabled: false
                 - query: ''
-                - playgroundQueryUuid: e3668c3f-0b45-4316-9d5a-11cfe9ffd053
+                - playgroundQueryUuid: f8712641-78f2-4d94-b3ba-d97868e73bc6
                 - playgroundQueryId: 4
                 - error: null
                 - privateParams: []
