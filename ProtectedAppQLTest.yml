@@ -113,7 +113,7 @@ appTemplate:
                 - queryDisabledMessage: ''
                 - successMessage: ''
                 - queryDisabled: ''
-                - playgroundQuerySaveId: 3
+                - playgroundQuerySaveId: 6
                 - resourceNameOverride: ''
                 - runWhenModelUpdates: true
                 - paginationPaginationField: ''
@@ -121,8 +121,8 @@ appTemplate:
                 - showFailureToaster: true
                 - paginationEnabled: false
                 - query: ''
-                - playgroundQueryUuid: 1039b838-4a0c-4043-badd-9f65a67e1967
-                - playgroundQueryId: 2
+                - playgroundQueryUuid: f8712641-78f2-4d94-b3ba-d97868e73bc6
+                - playgroundQueryId: 4
                 - error: null
                 - privateParams: []
                 - runWhenPageLoadsDelay: ''
