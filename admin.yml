@@ -84,6 +84,87 @@ appTemplate:
                 - updateSetValueDynamically: false
                 - notificationDuration: ''
             createdAt: 2022-12-14T18:31:53.769Z
+      - query2:
+          pluginTemplate:
+            id: query2
+            type: datasource
+            subtype: RESTQuery
+            resourceName: 56774ec8-a4fe-4340-bae4-a5f27ccab654
+            resourceDisplayName: Test Different Resources 2
+            template:
+              ordered:
+                - queryRefreshTime: ''
+                - paginationLimit: ''
+                - body: ''
+                - lastReceivedFromResourceAt: null
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: latest
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: true
+                - paginationPaginationField: ''
+                - headers: ''
+                - showFailureToaster: true
+                - paginationEnabled: false
+                - query: ''
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: null
+                - error: null
+                - privateParams: []
+                - runWhenPageLoadsDelay: ''
+                - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - isImported: false
+                - showSuccessToaster: true
+                - cacheKeyTtl: ''
+                - cookies: ''
+                - metadata: null
+                - changesetObject: ''
+                - errorTransformer: >-
+                    // The variable 'data' allows you to reference the request's
+                    data in the transformer. 
+
+                    // example: return data.find(element => element.isError)
+
+                    return data.error
+                - confirmationMessage: null
+                - isFetching: false
+                - changeset: ''
+                - rawData: null
+                - queryTriggerDelay: '0'
+                - resourceTypeOverride: ''
+                - watchedParams: []
+                - enableErrorTransformer: false
+                - showLatestVersionUpdatedWarning: false
+                - paginationDataField: ''
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - showUpdateSetValueDynamicallyToggle: true
+                - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - events: []
+                - queryTimeout: '10000'
+                - requireConfirmation: false
+                - type: GET
+                - queryFailureConditions: ''
+                - changesetIsObject: false
+                - enableCaching: false
+                - allowedGroups: []
+                - bodyType: json
+                - queryThrottleTime: '750'
+                - updateSetValueDynamically: false
+                - notificationDuration: ''
+            createdAt: 2022-12-14T18:35:28.105Z
       - textInput1:
           pluginTemplate:
             id: textInput1
