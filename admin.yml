@@ -3,6 +3,20 @@ pageUuid: ba448ac8-393f-11ed-9c11-7b9f9a991e62
 appTemplate:
   plugins:
     ordered:
+      - $main:
+          pluginTemplate:
+            id: $main
+            type: frame
+            subtype: Frame
+            template:
+              ordered:
+                - type: main
+                - sticky: false
+                - isHiddenOnDesktop: false
+                - isHiddenOnMobile: false
+            style:
+              ordered: []
+            createdAt: 2022-12-14T18:41:29.448Z
       - query1:
           pluginTemplate:
             id: query1
