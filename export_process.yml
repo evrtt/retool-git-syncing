@@ -16,7 +16,7 @@ appTemplate:
                 - isHiddenOnMobile: false
             style:
               ordered: []
-            createdAt: 2022-12-16T22:55:49.246Z
+            createdAt: 2022-12-16T22:58:39.714Z
       - query1:
           pluginTemplate:
             id: query1
@@ -112,7 +112,7 @@ appTemplate:
                 - showInEditor: false
                 - verticalAlign: center
                 - tooltipText: ''
-                - value: '## BRANCH 1'
+                - value: '## Branch 2'
                 - disableMarkdown: false
                 - overflowType: scroll
                 - maintainSpaceWhenHidden: false
@@ -122,7 +122,7 @@ appTemplate:
               position2:
                 height: 0.6
                 width: 3
-            createdAt: 2022-12-16T22:55:49.221Z
+            createdAt: 2022-12-16T22:58:39.656Z
   rootScreen: null
   version: 2.102.6
   markdownLinkBehavior: auto
