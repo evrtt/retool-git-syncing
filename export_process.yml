@@ -1,0 +1,34 @@
+version: 43.0.9
+pageUuid: 829982ce-7d94-11ed-9872-4312292c7411
+appTemplate:
+  plugins:
+    ordered:
+      - query1:
+          pluginTemplate:
+            id: query1
+            type: datasource
+            subtype: RESTQuery
+            resourceName: 56774ec8-a4fe-4340-bae4-a5f27ccab654
+            resourceDisplayName: Test Different Resources 2
+            template:
+              queryRefreshTime: ''
+              queryDisabledMessage: ''
+              successMessage: ''
+              queryDisabled: ''
+              resourceNameOverride: ''
+              runWhenModelUpdates: true
+              query: ''
+              privateParams: []
+              data: null
+              showSuccessToaster: true
+              confirmationMessage: null
+              watchedParams: []
+              timestamp: 0
+              runWhenPageLoads: false
+              queryTimeout: '10001'
+              requireConfirmation: false
+              queryThrottleTime: '750'
+            createdAt: 2022-12-16T22:53:51.777Z
+  rootScreen: null
+  version: 2.102.6
+  markdownLinkBehavior: auto
