@@ -16,7 +16,7 @@ appTemplate:
                 - isHiddenOnMobile: false
             style:
               ordered: []
-            createdAt: 2022-12-16T23:05:41.845Z
+            createdAt: 2022-12-16T23:10:35.748Z
       - query1:
           pluginTemplate:
             id: query1
@@ -112,7 +112,7 @@ appTemplate:
                 - showInEditor: false
                 - verticalAlign: center
                 - tooltipText: ''
-                - value: '## correct 1'
+                - value: '## Correct 2'
                 - disableMarkdown: false
                 - overflowType: scroll
                 - maintainSpaceWhenHidden: false
@@ -121,8 +121,8 @@ appTemplate:
             position2:
               position2:
                 height: 0.6
-                width: 2
-            createdAt: 2022-12-16T23:05:41.823Z
+                width: 3
+            createdAt: 2022-12-16T23:10:35.724Z
   rootScreen: null
   version: 2.102.6
   markdownLinkBehavior: auto
