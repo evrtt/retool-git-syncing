@@ -7,27 +7,98 @@ appTemplate:
           pluginTemplate:
             id: query1
             type: datasource
-            subtype: SqlQueryUnified
-            resourceName: ca201d15-ef0c-4983-98b8-8d3ace55e991
-            resourceDisplayName: Support Test DB
+            subtype: FirebaseQuery
+            resourceName: fd215098-890e-4e27-ae46-02f074f4fce6
+            resourceDisplayName: Test
             template:
-              queryRefreshTime: ''
-              queryDisabledMessage: ''
-              successMessage: ''
-              queryDisabled: ''
-              resourceNameOverride: ''
-              runWhenModelUpdates: true
-              query: ''
-              privateParams: []
-              data: null
-              showSuccessToaster: true
-              confirmationMessage: null
-              watchedParams: []
-              timestamp: 0
-              runWhenPageLoads: false
-              queryTimeout: '10001'
-              requireConfirmation: false
-              queryThrottleTime: '750'
+              ordered:
+                - queryRefreshTime: ''
+                - lastReceivedFromResourceAt: null
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: latest
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: true
+                - showFailureToaster: true
+                - query: ''
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: null
+                - error: null
+                - privateParams: []
+                - firestoreCollection: testusers
+                - runWhenPageLoadsDelay: ''
+                - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - isImported: false
+                - endAt: ''
+                - firebaseService: firestore
+                - showSuccessToaster: true
+                - equalTo: ''
+                - cacheKeyTtl: ''
+                - metadata: null
+                - uid: ''
+                - editorMode: gui
+                - actionType: queryFirestore
+                - changesetObject: ''
+                - setDbValue: ''
+                - value: ''
+                - errorTransformer: >-
+                    // The variable 'data' allows you to reference the request's
+                    data in the transformer. 
+
+                    // example: return data.find(element => element.isError)
+
+                    return data.error
+                - confirmationMessage: null
+                - isFetching: false
+                - changeset: ''
+                - filterType: ''
+                - rawData: null
+                - userOptions: ''
+                - docId: ''
+                - queryTriggerDelay: '0'
+                - resourceTypeOverride: ''
+                - watchedParams: []
+                - enableErrorTransformer: false
+                - ordering: ''
+                - startAt: ''
+                - limitType: ''
+                - showLatestVersionUpdatedWarning: false
+                - dbRef: ''
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - showUpdateSetValueDynamicallyToggle: true
+                - phoneNumber: ''
+                - nextPageToken: ''
+                - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - events: []
+                - queryTimeout: '10000'
+                - useRawCollectionId: false
+                - firestoreOrderBy: ''
+                - requireConfirmation: false
+                - orderByChildValue: ''
+                - queryFailureConditions: ''
+                - changesetIsObject: false
+                - limit: ''
+                - enableCaching: false
+                - firestoreOrderDirection: ''
+                - allowedGroups: []
+                - firestoreWhere: ''
+                - email: ''
+                - queryThrottleTime: '750'
+                - updateSetValueDynamically: false
+                - notificationDuration: ''
             createdAt: 2022-12-17T01:04:28.688Z
   rootScreen: null
   version: 2.103.7
