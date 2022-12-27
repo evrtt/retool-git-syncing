@@ -77,8 +77,12 @@ appTemplate:
                 - cardSize: half
                 - suffixIconByIndex: bold/interface-arrows-button-right
                 - scrollDirection: vertical
+                - prefixImageFitByIndex: cover
                 - itemMode: dynamic
                 - prefixImageSourceByIndex: '{{ item.Image }}'
+                - selectedIndex: null
+                - _paginatedData:
+                    array: []
                 - events:
                     - ordered:
                         - event: press
@@ -891,7 +895,7 @@ appTemplate:
   appThemeId: 5099
   rootScreen: tabscreen
   isMobileApp: true
-  version: 2.97.1
+  version: 2.103.7
   multiScreenMobileApp: true
   markdownLinkBehavior: auto
   experimentalDataTabEnabled: true
