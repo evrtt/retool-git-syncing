@@ -1,0 +1,897 @@
+version: 43.0.9
+pageUuid: 84ec7618-8617-11ed-8149-6b1c2e499735
+appTemplate:
+  plugins:
+    ordered:
+      - tabscreen:
+          pluginTemplate:
+            id: tabscreen
+            type: screen
+            subtype: TabScreen
+            template:
+              ordered:
+                - items:
+                    - ordered:
+                        - screen: inventoryScreen
+                        - icon: bold/interface-text-formatting-list-bullets
+                    - ordered:
+                        - screen: profileScreen
+                        - icon: bold/interface-user-single
+            createdAt: 2022-08-06T00:43:30.094Z
+      - inventoryScreen:
+          pluginTemplate:
+            id: inventoryScreen
+            type: screen
+            subtype: Screen
+            template:
+              ordered:
+                - title: Inventory
+                - headerLeftActions: []
+                - headerRightActions: []
+                - gap: 0
+                - padding:
+                    ordered:
+                      - left: 16
+                      - right: 16
+                      - top: 8
+                      - bottom: 8
+            createdAt: 2022-08-06T00:43:30.094Z
+      - profileScreen:
+          pluginTemplate:
+            id: profileScreen
+            type: screen
+            subtype: Screen
+            template:
+              ordered:
+                - title: Profile
+                - headerLeftActions: []
+                - headerRightActions: []
+                - gap: 16
+                - padding:
+                    ordered:
+                      - left: 16
+                      - right: 16
+                      - top: 0
+                      - bottom: 0
+            createdAt: 2022-08-06T00:43:30.094Z
+      - collectionView1:
+          pluginTemplate:
+            id: collectionView1
+            type: widget
+            subtype: RNCollectionViewV2Widget
+            template:
+              ordered:
+                - cardStyle: flat
+                - titleByIndex: '{{item.Product}}'
+                - subtitleByIndex: 'Qty: {{item.Quantity}} • ${{item.Price}}'
+                - showSeparator: true
+                - selectedPageIndex: 0
+                - cardType: compact
+                - serverPaginated: false
+                - data: '{{ query1.data }}'
+                - selectedItem: '{}'
+                - prefixTypeByIndex: image
+                - suffixTypeByIndex: text+icon
+                - prefixIconByIndex: bold/interface-user-single
+                - prefixImageSizeByIndex: 1 to 1
+                - cardSize: half
+                - suffixIconByIndex: bold/interface-arrows-button-right
+                - scrollDirection: vertical
+                - itemMode: dynamic
+                - prefixImageSourceByIndex: '{{ item.Image }}'
+                - events:
+                    - ordered:
+                        - event: press
+                        - type: navigator
+                        - method: navigateTo
+                        - pluginId: ''
+                        - targetId: null
+                        - params:
+                            ordered:
+                              - screenPluginId: productDetailScreen
+                        - waitType: debounce
+                        - waitMs: '0'
+                - _ids: []
+                - bodyByIndex: ''
+                - suffixValueByIndex: 'false'
+                - suffixTextByIndex: ''
+                - subtitleLengthByIndex: 2
+            position2:
+              position2:
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition: {}
+            createdAt: 2022-08-06T00:43:30.094Z
+            screen: inventoryScreen
+      - productDetailScreen:
+          pluginTemplate:
+            id: productDetailScreen
+            type: screen
+            subtype: Screen
+            template:
+              ordered:
+                - title: Product Detail
+                - headerLeftActions: []
+                - headerRightActions: []
+                - gap: 8
+                - padding:
+                    ordered:
+                      - left: 16
+                      - right: 16
+                      - top: 0
+                      - bottom: 0
+                - events: []
+            createdAt: 2022-08-06T00:59:14.133Z
+      - $main:
+          pluginTemplate:
+            id: $main
+            type: frame
+            subtype: Frame
+            template:
+              ordered:
+                - type: main
+                - sticky: false
+            style:
+              ordered: []
+            createdAt: 2022-08-06T22:35:50.470Z
+      - image2:
+          pluginTemplate:
+            id: image2
+            type: widget
+            subtype: RNImageWidget
+            template:
+              ordered:
+                - src: '{{collectionView1.selectedItem.Image}}'
+                - ratio: 1.3333333333333333
+                - mode: cover
+                - cornerType: square
+            style:
+              ordered: []
+            position2:
+              position2:
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition: {}
+            createdAt: 2022-08-06T22:43:54.938Z
+            screen: productDetailScreen
+      - heading1:
+          pluginTemplate:
+            id: heading1
+            type: widget
+            subtype: RNHeadingWidget
+            template:
+              ordered:
+                - value: '{{collectionView1.selectedItem.Product}}'
+                - size: h2
+                - width: full
+                - textAlign: left
+            style:
+              ordered: []
+            position2:
+              position2:
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 1
+            createdAt: 2022-08-06T22:51:03.949Z
+            screen: productDetailScreen
+      - text1:
+          pluginTemplate:
+            id: text1
+            type: widget
+            subtype: RNTextWidget
+            template:
+              ordered:
+                - value: 'Product ID: {{collectionView1.selectedItem.id}}'
+                - size: large
+                - weight: normal
+                - width: full
+                - textAlign: left
+            style:
+              ordered: []
+            position2:
+              position2:
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 2
+            createdAt: 2022-08-06T22:51:04.720Z
+            screen: productDetailScreen
+      - image3:
+          pluginTemplate:
+            id: image3
+            type: widget
+            subtype: RNImageWidget
+            template:
+              ordered:
+                - src: https://img.icons8.com/ios-glyphs/344/user-male-circle.png
+                - ratio: 2
+                - mode: contain
+                - cornerType: circle
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container1
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition: {}
+            createdAt: 2022-08-06T23:00:26.923Z
+            screen: profileScreen
+      - heading2:
+          pluginTemplate:
+            id: heading2
+            type: widget
+            subtype: RNHeadingWidget
+            template:
+              ordered:
+                - value: '{{current_user.fullName || "New User"}}'
+                - size: h2
+                - width: full
+                - textAlign: center
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container1
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 1
+            createdAt: 2022-08-06T23:02:41.570Z
+            screen: profileScreen
+      - container1:
+          pluginTemplate:
+            id: container1
+            type: widget
+            subtype: RNContainerWidget
+            template:
+              ordered:
+                - events:
+                    ordered: []
+                - layout: column
+                - justify: flex-start
+                - align: flex-start
+                - gap: 0
+                - padding:
+                    ordered:
+                      - left: 0
+                      - right: 0
+                      - top: 0
+                      - bottom: 0
+                - width: full
+            style:
+              ordered: []
+            position2:
+              position2:
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 1
+            createdAt: 2022-08-06T23:10:54.210Z
+            screen: profileScreen
+      - heading3:
+          pluginTemplate:
+            id: heading3
+            type: widget
+            subtype: RNHeadingWidget
+            template:
+              ordered:
+                - value: 👤 Role
+                - size: h4
+                - width: full
+                - textAlign: left
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container2
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition: {}
+            createdAt: 2022-08-08T16:17:17.579Z
+            screen: profileScreen
+      - container2:
+          pluginTemplate:
+            id: container2
+            type: widget
+            subtype: RNContainerWidget
+            template:
+              ordered:
+                - events:
+                    ordered: []
+                - layout: column
+                - justify: flex-start
+                - align: flex-start
+                - gap: 0
+                - padding:
+                    ordered:
+                      - left: 0
+                      - right: 0
+                      - top: 0
+                      - bottom: 0
+                - width: full
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container5
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 2
+            createdAt: 2022-08-08T16:17:53.295Z
+            screen: profileScreen
+      - text5:
+          pluginTemplate:
+            id: text5
+            type: widget
+            subtype: RNTextWidget
+            template:
+              ordered:
+                - value: '{{ current_user.groups[''0''].name}}'
+                - size: large
+                - weight: normal
+                - width: full
+                - textAlign: left
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container2
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 1
+            createdAt: 2022-08-08T16:18:01.605Z
+            screen: profileScreen
+      - container3:
+          pluginTemplate:
+            id: container3
+            type: widget
+            subtype: RNContainerWidget
+            template:
+              ordered:
+                - events:
+                    ordered: []
+                - layout: column
+                - justify: flex-start
+                - align: flex-start
+                - gap: 0
+                - padding:
+                    ordered:
+                      - left: 0
+                      - right: 0
+                      - top: 0
+                      - bottom: 0
+                - width: full
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container5
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition: {}
+            createdAt: 2022-08-08T16:18:36.289Z
+            screen: profileScreen
+      - heading4:
+          pluginTemplate:
+            id: heading4
+            type: widget
+            subtype: RNHeadingWidget
+            template:
+              ordered:
+                - value: 📩  Email
+                - size: h4
+                - width: full
+                - textAlign: left
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container3
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition: {}
+            createdAt: 2022-08-08T16:18:36.331Z
+            screen: profileScreen
+      - text6:
+          pluginTemplate:
+            id: text6
+            type: widget
+            subtype: RNTextWidget
+            template:
+              ordered:
+                - value: '{{current_user.email}}'
+                - size: large
+                - weight: normal
+                - width: full
+                - textAlign: left
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container3
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 1
+            createdAt: 2022-08-08T16:18:36.373Z
+            screen: profileScreen
+      - container4:
+          pluginTemplate:
+            id: container4
+            type: widget
+            subtype: RNContainerWidget
+            template:
+              ordered:
+                - events:
+                    ordered: []
+                - layout: column
+                - justify: flex-start
+                - align: flex-start
+                - gap: 0
+                - padding:
+                    ordered:
+                      - left: 0
+                      - right: 0
+                      - top: 0
+                      - bottom: 0
+                - width: full
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container5
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 1
+            createdAt: 2022-08-08T16:18:45.565Z
+            screen: profileScreen
+      - heading5:
+          pluginTemplate:
+            id: heading5
+            type: widget
+            subtype: RNHeadingWidget
+            template:
+              ordered:
+                - value: 📅  Member since
+                - size: h4
+                - width: full
+                - textAlign: left
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container4
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition: {}
+            createdAt: 2022-08-08T16:18:45.610Z
+            screen: profileScreen
+      - text7:
+          pluginTemplate:
+            id: text7
+            type: widget
+            subtype: RNTextWidget
+            template:
+              ordered:
+                - value: '{{moment().format(''dddd MMMM Do YYYY'')}}'
+                - size: large
+                - weight: normal
+                - width: full
+                - textAlign: left
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container4
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 1
+            createdAt: 2022-08-08T16:18:45.655Z
+            screen: profileScreen
+      - container5:
+          pluginTemplate:
+            id: container5
+            type: widget
+            subtype: RNContainerWidget
+            template:
+              ordered:
+                - events:
+                    ordered: []
+                - layout: column
+                - justify: flex-start
+                - align: flex-start
+                - gap: 16
+                - padding:
+                    ordered:
+                      - left: 0
+                      - right: 0
+                      - top: 0
+                      - bottom: 0
+                - width: full
+            style:
+              ordered: []
+            position2:
+              position2:
+                container: container1
+                height: 5
+                width: 3
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 2
+            createdAt: 2022-08-08T16:20:15.020Z
+            screen: profileScreen
+      - query1:
+          pluginTemplate:
+            id: query1
+            type: datasource
+            subtype: JavascriptQuery
+            resourceName: JavascriptQuery
+            template:
+              ordered:
+                - queryRefreshTime: ''
+                - lastReceivedFromResourceAt: null
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: latest
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: false
+                - showFailureToaster: true
+                - query: |-
+                    return [
+                      {
+                        "id": 240,
+                        "Product": "4096 BBD PC1DA",
+                        "Quantity": 50,
+                        "Price": 39.99,
+                        "Image": "https://i.ibb.co/brDKpBF/4096-BBD-PC1-DA.jpg"
+                      },
+                      {
+                        "id": 241,
+                        "Product": "Button 17x6mm",
+                        "Quantity": 18,
+                        "Price": 8.99,
+                        "Image": "https://i.ibb.co/qsntWBZ/Button-17x6-mm.jpg"
+                      },
+                      {
+                        "id": 242,
+                        "Product": "Button 3920 Red",
+                        "Quantity": 8,
+                        "Price": 8.99,
+                        "Image": "https://i.ibb.co/ZfNt9wN/Button-3920-Red.jpg"
+                      },
+                      {
+                        "id": 243,
+                        "Product": "Converter PCM56P",
+                        "Quantity": 24,
+                        "Price": 4.99,
+                        "Image": "https://i.ibb.co/ZcmvYt2/Converter-PCM56-P.jpg"
+                      },
+                      {
+                        "id": 244,
+                        "Product": "DCIN PCB JNO60",
+                        "Quantity": 3,
+                        "Price": 25.99,
+                        "Image": "https://i.ibb.co/QCyxSwc/DCINPCBJNO60.jpg"
+                      },
+                      {
+                        "id": 245,
+                        "Product": "Diode Matrix",
+                        "Quantity": 4,
+                        "Price": 0.04,
+                        "Image": "https://i.ibb.co/W22LydP/Diode-Matrix.jpg"
+                      },
+                      {
+                        "id": 246,
+                        "Product": "Encoder 16mm",
+                        "Quantity": 24,
+                        "Price": 5.99,
+                        "Image": "https://i.ibb.co/kXmKZfD/Encoder16mm.jpg"
+                      },
+                      {
+                        "id": 247,
+                        "Product": "Encoder 22mm",
+                        "Quantity": 40,
+                        "Price": 9.99,
+                        "Image": "https://i.ibb.co/tqPgRpS/Encoder22mm.jpg"
+                      },
+                      {
+                        "id": 248,
+                        "Product": "Fader Knob A940",
+                        "Quantity": 22,
+                        "Price": 7.99,
+                        "Image": "https://i.ibb.co/VHp7T9z/Fader-knob-A940.jpg"
+                      },
+                      {
+                        "id": 249,
+                        "Product": "Fader Knob A941",
+                        "Quantity": 20,
+                        "Price": 6.99,
+                        "Image": "https://i.ibb.co/nwPz165/Fader-knob-A941.jpg"
+                      },
+                      {
+                        "id": 250,
+                        "Product": "Knob ESX Silver",
+                        "Quantity": 32,
+                        "Price": 5,
+                        "Image": "https://i.ibb.co/8PVCGDy/Knob-ESX-Silver.jpg"
+                      },
+                      {
+                        "id": 251,
+                        "Product": "Knob FNTM",
+                        "Quantity": 24,
+                        "Price": 7.99,
+                        "Image": "https://i.ibb.co/TLm3Qgc/Knob-FNTM.jpg"
+                      },
+                      {
+                        "id": 252,
+                        "Product": "LCD Display",
+                        "Quantity": 6,
+                        "Price": 120.92,
+                        "Image": "https://i.ibb.co/jrB9B9H/LCDDisplay.jpg"
+                      },
+                      {
+                        "id": 253,
+                        "Product": "LED 3mm Black",
+                        "Quantity": 33,
+                        "Price": 6.1,
+                        "Image": "https://i.ibb.co/CsS9pz1/LED3mm-Black.jpg"
+                      },
+                      {
+                        "id": 254,
+                        "Product": "LED 3mm Green",
+                        "Quantity": 30,
+                        "Price": 3.9,
+                        "Image": "https://i.ibb.co/bR4yQVh/LED3mm-Green.jpg"
+                      },
+                      {
+                        "id": 255,
+                        "Product": "LED 3mm Red",
+                        "Quantity": 34,
+                        "Price": 4.99,
+                        "Image": "https://i.ibb.co/hL63zYb/LED3mm-Red.jpg"
+                      },
+                      {
+                        "id": 256,
+                        "Product": "Mainboard 250",
+                        "Quantity": 18,
+                        "Price": 270.99,
+                        "Image": "https://i.ibb.co/NxY1Jmk/Mainboard250.jpg"
+                      },
+                      {
+                        "id": 257,
+                        "Product": "Mainboard 530",
+                        "Quantity": 17,
+                        "Price": 324.99,
+                        "Image": "https://i.ibb.co/v4XFZQv/mainboard530.jpg"
+                      },
+                      {
+                        "id": 258,
+                        "Product": "Mainboard KRG900",
+                        "Quantity": 12,
+                        "Price": 279.99,
+                        "Image": "https://i.ibb.co/3CmKCRK/Mainboard-KRG900.jpg"
+                      },
+                      {
+                        "id": 259,
+                        "Product": "Potentiometer with PCB",
+                        "Quantity": 37,
+                        "Price": 120.92,
+                        "Image": "https://i.ibb.co/CH403gT/Potentiometer-with-PCB.jpg"
+                      },
+                      {
+                        "id": 260,
+                        "Product": "Slide Switch JNO",
+                        "Quantity": 12,
+                        "Price": 5.99,
+                        "Image": "https://i.ibb.co/BZqJCX6/Slide-Switch-JNO.jpg"
+                      },
+                      {
+                        "id": 261,
+                        "Product": "Speaker 2.5 GK2940",
+                        "Quantity": 15,
+                        "Price": 10.99,
+                        "Image": "https://i.ibb.co/yfkd50Q/Speaker-2-5-GK2940.jpg"
+                      },
+                      {
+                        "id": 262,
+                        "Product": "Switch 12mm MPC",
+                        "Quantity": 24,
+                        "Price": 2.5,
+                        "Image": "https://i.ibb.co/7y22S41/Switch-1-2mm-MPC.jpg"
+                      },
+                      {
+                        "id": 263,
+                        "Product": "Switch 7.3mm",
+                        "Quantity": 26,
+                        "Price": 0.88,
+                        "Image": "https://i.ibb.co/zVnRfVf/Switch-7-3mm.jpg"
+                      },
+                      {
+                        "id": 264,
+                        "Product": "Switch 9.5mm JNO",
+                        "Quantity": 18,
+                        "Price": 0.89,
+                        "Image": "https://i.ibb.co/wwkNDq8/Switch-9-5mm-JNO.jpg"
+                      },
+                      {
+                        "id": 265,
+                        "Product": "Switch 9.5mm",
+                        "Quantity": 32,
+                        "Price": 0.64,
+                        "Image": "https://i.ibb.co/F4Ppxjn/Switch-9-5mm.jpg"
+                      },
+                      {
+                        "id": 266,
+                        "Product": "Switch Black SCP VS",
+                        "Quantity": 18,
+                        "Price": 4.5,
+                        "Image": "https://i.ibb.co/KwX8SL5/Switch-Black-SCP-VS.jpg"
+                      },
+                      {
+                        "id": 267,
+                        "Product": "Switch Blue SCP VS",
+                        "Quantity": 18,
+                        "Price": 4.5,
+                        "Image": "https://i.ibb.co/Qd4CdXq/Switch-Blue-SCP-VS.jpg"
+                      },
+                      {
+                        "id": 268,
+                        "Product": "Switch Red SCP VS",
+                        "Quantity": 16,
+                        "Price": 4.5,
+                        "Image": "https://i.ibb.co/C7Jtg7f/Switch-Red-SCP-VS.jpg"
+                      },
+                      {
+                        "id": 269,
+                        "Product": "Switch Yellow SCP VS",
+                        "Quantity": 22,
+                        "Price": 4.5,
+                        "Image": "https://i.ibb.co/QQJpjs5/Switch-Yellow-SCP-VS.jpg"
+                      },
+                      {
+                        "id": 270,
+                        "Product": "Transformer DX103",
+                        "Quantity": 3,
+                        "Price": 49.99,
+                        "Image": "https://i.ibb.co/tBWBSSY/Transformer-DX103.jpg"
+                      },
+                      {
+                        "id": 271,
+                        "Product": "Transformer DX107",
+                        "Quantity": 8,
+                        "Price": 50,
+                        "Image": "https://i.ibb.co/BVDKVQd/Transformer-DX107.jpg"
+                      },
+                      {
+                        "id": 272,
+                        "Product": "Transistor SMD 20405",
+                        "Quantity": 12,
+                        "Price": 1.99,
+                        "Image": "https://i.ibb.co/4PJv7Kg/Transistor-SMD20405.jpg"
+                      }
+                    ];
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: null
+                - error: null
+                - privateParams: []
+                - runWhenPageLoadsDelay: ''
+                - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - isImported: false
+                - showSuccessToaster: true
+                - cacheKeyTtl: ''
+                - metadata: null
+                - changesetObject: ''
+                - errorTransformer: >-
+                    // The variable 'data' allows you to reference the request's
+                    data in the transformer. 
+
+                    // example: return data.find(element => element.isError)
+
+                    return data.error
+                - confirmationMessage: null
+                - isFetching: false
+                - changeset: ''
+                - rawData: null
+                - queryTriggerDelay: '0'
+                - resourceTypeOverride: null
+                - watchedParams: []
+                - enableErrorTransformer: false
+                - showLatestVersionUpdatedWarning: false
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - showUpdateSetValueDynamicallyToggle: true
+                - runWhenPageLoads: true
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - events: []
+                - queryTimeout: '10000'
+                - requireConfirmation: false
+                - queryFailureConditions: ''
+                - changesetIsObject: false
+                - enableCaching: false
+                - allowedGroups: []
+                - queryThrottleTime: '750'
+                - updateSetValueDynamically: false
+                - notificationDuration: ''
+            createdAt: 2022-08-12T21:13:15.265Z
+      - text8:
+          pluginTemplate:
+            id: text8
+            type: widget
+            subtype: RNTextWidget
+            template:
+              ordered:
+                - value: 'Price: {{collectionView1.selectedItem.Price}}'
+                - size: large
+                - weight: normal
+                - width: full
+                - textAlign: left
+            style:
+              ordered: []
+            position2:
+              position2: {}
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 6
+            createdAt: 2022-08-12T21:39:54.453Z
+            screen: productDetailScreen
+      - text9:
+          pluginTemplate:
+            id: text9
+            type: widget
+            subtype: RNTextWidget
+            template:
+              ordered:
+                - value: 'Quantity: {{collectionView1.selectedItem.Quantity}}'
+                - size: large
+                - weight: normal
+                - width: full
+                - textAlign: left
+            style:
+              ordered: []
+            position2:
+              position2: {}
+            mobileAppPosition:
+              mobilePosition:
+                ordinal: 7
+            createdAt: 2022-08-12T21:40:28.968Z
+            screen: productDetailScreen
+  appThemeId: 5099
+  rootScreen: tabscreen
+  isMobileApp: true
+  version: 2.97.1
+  multiScreenMobileApp: true
+  markdownLinkBehavior: auto
+  experimentalDataTabEnabled: true
