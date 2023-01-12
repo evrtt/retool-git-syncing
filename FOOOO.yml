@@ -1,0 +1,34 @@
+version: 43.0.9
+pageUuid: bd37a5ae-92d0-11ed-af88-d745ae0b2e56
+appTemplate:
+  plugins:
+    ordered:
+      - query1:
+          pluginTemplate:
+            id: query1
+            type: datasource
+            subtype: SqlQueryUnified
+            resourceName: ca201d15-ef0c-4983-98b8-8d3ace55e991
+            resourceDisplayName: Support Test DB
+            template:
+              queryRefreshTime: ''
+              queryDisabledMessage: ''
+              successMessage: ''
+              queryDisabled: ''
+              resourceNameOverride: ''
+              runWhenModelUpdates: true
+              query: ''
+              privateParams: []
+              data: null
+              showSuccessToaster: true
+              confirmationMessage: null
+              watchedParams: []
+              timestamp: 0
+              runWhenPageLoads: false
+              queryTimeout: '10001'
+              requireConfirmation: false
+              queryThrottleTime: '750'
+            createdAt: 2023-01-12T23:27:54.354Z
+  rootScreen: null
+  version: 2.103.7
+  markdownLinkBehavior: auto
