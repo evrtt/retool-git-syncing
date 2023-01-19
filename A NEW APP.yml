@@ -22,7 +22,7 @@ appTemplate:
                 - queryDisabled: ''
                 - playgroundQuerySaveId: latest
                 - resourceNameOverride: ''
-                - runWhenModelUpdates: false
+                - runWhenModelUpdates: true
                 - showFailureToaster: true
                 - query: ''
                 - playgroundQueryUuid: ''
@@ -42,7 +42,7 @@ appTemplate:
                 - requestSentTimestamp: null
                 - databaseHostOverride: ''
                 - metadata: null
-                - editorMode: gui
+                - editorMode: sql
                 - queryRunTime: null
                 - actionType: ''
                 - changesetObject: ''
