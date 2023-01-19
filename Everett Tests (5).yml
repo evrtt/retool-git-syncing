@@ -206,7 +206,7 @@ appTemplate:
                 - actionButtons: []
                 - actionButtonSelectsRow: true
                 - selectRowByDefault: true
-                - defaultSortByColumn: name
+                - defaultSortByColumn: date
                 - paginationOffset: 0
                 - columnAlignment:
                     ordered:
