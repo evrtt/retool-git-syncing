@@ -1,0 +1,500 @@
+version: 43.0.9
+pageUuid: 1ef665fc-5c8d-11ed-8c49-0b3cd43352e0
+appTemplate:
+  plugins:
+    ordered:
+      - query1:
+          pluginTemplate:
+            id: query1
+            type: datasource
+            subtype: RESTQuery
+            resourceName: 199ef987-eef5-4f8d-b737-de5f2cbab17a
+            template:
+              ordered:
+                - queryRefreshTime: ''
+                - paginationLimit: ''
+                - body: ''
+                - lastReceivedFromResourceAt: null
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: latest
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: true
+                - paginationPaginationField: ''
+                - headers: ''
+                - showFailureToaster: true
+                - paginationEnabled: false
+                - query: ''
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: null
+                - error: null
+                - privateParams: []
+                - runWhenPageLoadsDelay: ''
+                - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - isImported: false
+                - showSuccessToaster: true
+                - cacheKeyTtl: ''
+                - cookies: ''
+                - metadata: null
+                - changesetObject: ''
+                - errorTransformer: >-
+                    // The variable 'data' allows you to reference the request's
+                    data in the transformer. 
+
+                    // example: return data.find(element => element.isError)
+
+                    return data.error
+                - confirmationMessage: null
+                - isFetching: false
+                - changeset: ''
+                - rawData: null
+                - queryTriggerDelay: '0'
+                - resourceTypeOverride: null
+                - watchedParams: []
+                - enableErrorTransformer: false
+                - showLatestVersionUpdatedWarning: false
+                - paginationDataField: ''
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - showUpdateSetValueDynamicallyToggle: true
+                - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - events: []
+                - queryTimeout: '10001'
+                - requireConfirmation: false
+                - type: GET
+                - queryFailureConditions: ''
+                - changesetIsObject: false
+                - enableCaching: false
+                - allowedGroups: []
+                - bodyType: json
+                - queryThrottleTime: '750'
+                - updateSetValueDynamically: false
+                - notificationDuration: ''
+            createdAt: 2022-12-01T21:31:46.227Z
+      - table1:
+          pluginTemplate:
+            id: table1
+            type: widget
+            subtype: TableWidget
+            template:
+              ordered:
+                - showCustomButton: false
+                - sortMappedValue:
+                    ordered: []
+                - _filteredSortedRenderedDataWithTypes: null
+                - heightType: fixed
+                - normalizedData: null
+                - rowHeight: standard
+                - saveChangesDisabled: ''
+                - columnTypeProperties:
+                    ordered:
+                      - year:
+                          ordered:
+                            - dateFormat: MMM d, yyyy
+                      - date:
+                          ordered:
+                            - dateFormat: MMM d, yyyy
+                - columnWidths:
+                    - object:
+                        id: name
+                        value: 110
+                    - object:
+                        id: id
+                        value: 148
+                    - object:
+                        id: sales
+                        value: 106
+                    - object:
+                        id: __retool__action_list
+                        value: 296
+                    - object:
+                        id: email
+                        value: 40
+                - showSummaryFooter: false
+                - disableRowSelectInteraction: false
+                - columnWidthsMobile: []
+                - hasNextAfterCursor: ''
+                - columnTypeSpecificExtras:
+                    ordered: []
+                - onRowAdded: ''
+                - columnHeaderNames:
+                    ordered: []
+                - alwaysShowPaginator: false
+                - columnColors:
+                    ordered:
+                      - date2: ''
+                      - name: ''
+                      - sales: ''
+                      - date: ''
+                      - status: ''
+                      - region: ''
+                      - id: ''
+                      - email: ''
+                      - year: ''
+                      - 'on': ''
+                - columnFrozenAlignments:
+                    ordered: []
+                - allowMultiRowSelect: false
+                - columnFormats:
+                    ordered:
+                      - year: default
+                      - date: default
+                - columnRestrictedEditing:
+                    ordered: []
+                - showFilterButton: true
+                - _columnVisibility:
+                    ordered: []
+                - _columnSummaryTypes:
+                    ordered:
+                      - year: ''
+                      - date: ''
+                - _columnsWithLegacyBackgroundColor:
+                    set: []
+                - showAddRowButton: false
+                - _unfilteredSelectedIndex: null
+                - nextBeforeCursor: ''
+                - columnVisibility:
+                    ordered: []
+                - selectedPageIndex: '0'
+                - applyDynamicSettingsToColumnOrder: false
+                - rowColor:
+                    array: []
+                - actionButtonColumnName: Actions
+                - resetAfterSave: true
+                - filterStackType: and
+                - downloadRawData: false
+                - showFetchingIndicator: true
+                - serverPaginated: false
+                - data: |-
+                    {date: ["2022-11-22",
+                    "2023-04-18", 
+                    "2023-01-18",
+                    "2022-08-18", 
+                    "2022-08-22",
+                    null,
+                    "2022-01-28",
+                    "2022-07-06",
+                    "2022-10-13", 
+                    null, 
+                    null,
+
+                    ], date2: ["2022-11-22",
+                    "2023-04-18", 
+                    "2023-01-18",
+                    "2022-08-18", 
+                    "2022-08-22",
+                    null,
+                    null,
+                    null,
+                    null, 
+                    null, 
+                    null
+                    ]}
+                - displayedData: null
+                - actionButtons: []
+                - actionButtonSelectsRow: true
+                - selectRowByDefault: true
+                - defaultSortByColumn: name
+                - paginationOffset: 0
+                - columnAlignment:
+                    ordered:
+                      - year: left
+                      - date: left
+                - columnSummaries:
+                    object: {}
+                - showBoxShadow: false
+                - sortedDesc: false
+                - customButtonName: ''
+                - columnMappersRenderAsHTML:
+                    ordered: []
+                - showRefreshButton: true
+                - pageSize: '20'
+                - useDynamicColumnSettings: true
+                - actionButtonPosition: left
+                - dynamicRowHeights: false
+                - bulkUpdateAction: ''
+                - afterCursor: ''
+                - onCustomButtonPressQueryName: ''
+                - changeSet:
+                    object: {}
+                - sortedColumn: ''
+                - _columnSummaryValues:
+                    ordered:
+                      - year: ''
+                      - date: ''
+                - checkboxRowSelect: true
+                - _compatibilityMode: false
+                - showColumnBorders: false
+                - clearSelectionLabel: Clear selection
+                - _renderedDataWithTypes: null
+                - columnAllowOverflow:
+                    ordered: []
+                - beforeCursor: ''
+                - serverPaginationType: limitOffsetBased
+                - onRowSelect: ''
+                - showDownloadButton: true
+                - selectedIndex: null
+                - defaultSortDescending: false
+                - _sortedDisplayedDataIndices: null
+                - dynamicColumnSettings: null
+                - totalRowCount: ''
+                - recordUpdates:
+                    array: []
+                - newRow: null
+                - emptyMessage: No rows found
+                - columnEditable:
+                    ordered: []
+                - _viewerColumnSummaryTypes:
+                    object: {}
+                - filters:
+                    array: []
+                - displayedDataIndices: null
+                - disableSorting:
+                    ordered: []
+                - columnMappers:
+                    ordered:
+                      - year: '{{self == null ? ''Required'' : self}}'
+                      - date: '{{self == null ? "Foo" : self}}'
+                - showClearSelection: false
+                - doubleClickToEdit: true
+                - overflowType: pagination
+                - _reverseSortedDisplayedDataIndices: null
+                - showTableBorder: true
+                - selectedCell:
+                    object:
+                      index: null
+                      data: null
+                      columnName: null
+                - columns: []
+                - defaultSelectedRow: first
+                - freezeActionButtonColumns: false
+                - sort: null
+                - _columns: []
+                - sortByRawValue:
+                    ordered:
+                      - year: false
+                      - date: false
+                      - date2: true
+                - calculatedColumns: []
+                - selectedRow:
+                    object:
+                      index: null
+                      data: null
+                - showPaginationOnTop: false
+                - _reverseDisplayedDataIndices: null
+                - nextAfterCursor: ''
+                - useCompactMode: false
+            style:
+              ordered: []
+            position2:
+              position2:
+                height: 10.600000000000001
+                width: 12
+            createdAt: 2022-12-01T21:31:52.624Z
+      - $main:
+          pluginTemplate:
+            id: $main
+            type: frame
+            subtype: Frame
+            template:
+              ordered:
+                - type: main
+                - sticky: false
+                - isHiddenOnDesktop: false
+                - isHiddenOnMobile: false
+            style:
+              ordered: []
+            createdAt: 2022-12-01T21:31:52.752Z
+      - query2:
+          pluginTemplate:
+            id: query2
+            type: datasource
+            subtype: JavascriptQuery
+            resourceName: JavascriptQuery
+            template:
+              ordered:
+                - queryRefreshTime: ''
+                - lastReceivedFromResourceAt: null
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: latest
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: false
+                - showFailureToaster: true
+                - query: |-
+                    let d = [{
+                      "id": 1,
+                      "name": "Hanson Deck",
+                      "email": "hanson@deck.com",
+                      "sales": 37,
+                      "region": 2,
+                      "on": false,
+                      "status": 'TODO',
+                      "year": '2023-02-03T16:00:00.000Z'
+                    }, {
+                      "id": 2,
+                      "name": "Sue Shei",
+                      "email": "sueshei@example.com",
+                      "sales": 550,
+                      "region": 2,
+                      "on": false,
+                      "status": 'TODO',
+                      "year": '2023-01-14T16:00:00.000Z'
+                    }, {
+                      "id": 3,
+                      "name": "Jason Response",
+                      "email": "jason@response.com",
+                      "sales": 55,
+                      "region": 2,
+                      "on": false,
+                      "status": 'TODO',
+                      "year": '2023-01-03T16:00:00.000Z'
+                    }, {
+                      "id": 4,
+                      "name": "Cher Actor",
+                      "email": "cher@example.com",
+                      "sales": 424,
+                      "region": 2,
+                      "on": false,
+                      "status": 'TODO',
+                      "year": '2023-01-02T16:00:00.000Z'
+                    }, {
+                      "id": 5,
+                      "name": "Erica Widget",
+                      "email": "erica@widget.org",
+                      "sales": 243,
+                      "region": 2,
+                      "on": false,
+                      "status": 'TODO',
+                      "year": '01-03-2022'
+                    }, {
+                      "id": 5,
+                      "name": "Erica Widget",
+                      "email": "erica@widget.org",
+                      "sales": 243,
+                      "region": 2,
+                      "on": false,
+                      "status": 'TODO',
+                      "year": 'null'
+                    }]
+
+                    return d
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: null
+                - error: null
+                - privateParams: []
+                - runWhenPageLoadsDelay: ''
+                - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - isImported: false
+                - showSuccessToaster: true
+                - cacheKeyTtl: ''
+                - metadata: null
+                - changesetObject: ''
+                - errorTransformer: >-
+                    // The variable 'data' allows you to reference the request's
+                    data in the transformer. 
+
+                    // example: return data.find(element => element.isError)
+
+                    return data.error
+                - confirmationMessage: null
+                - isFetching: false
+                - changeset: ''
+                - rawData: null
+                - queryTriggerDelay: '0'
+                - resourceTypeOverride: null
+                - watchedParams: []
+                - enableErrorTransformer: false
+                - showLatestVersionUpdatedWarning: false
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - showUpdateSetValueDynamicallyToggle: true
+                - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - events: []
+                - queryTimeout: '10000'
+                - requireConfirmation: false
+                - queryFailureConditions: ''
+                - changesetIsObject: false
+                - enableCaching: false
+                - allowedGroups: []
+                - queryThrottleTime: '750'
+                - updateSetValueDynamically: false
+                - notificationDuration: ''
+            createdAt: 2023-01-19T21:09:55.398Z
+      - button1:
+          pluginTemplate:
+            id: button1
+            type: widget
+            subtype: ButtonWidget2
+            template:
+              ordered:
+                - horizontalAlign: stretch
+                - clickable: false
+                - iconAfter: ''
+                - submitTargetId: null
+                - hidden: false
+                - text: Button
+                - showInEditor: false
+                - tooltipText: ''
+                - styleVariant: solid
+                - submit: false
+                - iconBefore: ''
+                - events:
+                    - ordered:
+                        - event: click
+                        - type: widget
+                        - method: setFilters
+                        - pluginId: table1
+                        - targetId: null
+                        - params:
+                            ordered:
+                              - filterStackType: or
+                              - filters: >-
+                                  [{columnName: "date", filterValue:
+                                  {{moment().subtract(30, 'week') }}, operator:
+                                  "after"}, {columnName: "date2", filterValue:
+                                  {{null}}, operator: "isEmpty"}]
+                        - waitType: debounce
+                        - waitMs: '0'
+                - loading: false
+                - loaderPosition: auto
+                - disabled: false
+                - maintainSpaceWhenHidden: false
+            style:
+              ordered: []
+            position2:
+              position2:
+                row: 11.8
+                col: 10
+                height: 1
+                width: 2
+            createdAt: 2023-01-19T23:29:56.223Z
+  queryStatusVisibility: false
+  rootScreen: null
+  version: 2.103.2
+  markdownLinkBehavior: auto
+  experimentalDataTabEnabled: true
