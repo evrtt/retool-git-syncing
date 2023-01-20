@@ -181,6 +181,71 @@ appTemplate:
                 height: 8
                 width: 8
             createdAt: 2023-01-20T20:47:40.260Z
+      - $main:
+          pluginTemplate:
+            id: $main
+            type: frame
+            subtype: Frame
+            template:
+              ordered:
+                - type: main
+                - sticky: false
+                - isHiddenOnDesktop: false
+                - isHiddenOnMobile: false
+            style:
+              ordered: []
+            createdAt: 2023-01-20T20:47:40.294Z
+      - fileButton1:
+          pluginTemplate:
+            id: fileButton1
+            type: widget
+            subtype: FileButtonWidget
+            template:
+              ordered:
+                - parsedValue:
+                    array: []
+                - iconAfter: ''
+                - parseFiles: false
+                - maxSize: ''
+                - appendNewSelection: false
+                - selectionType: single
+                - accept:
+                    array: []
+                - hidden: false
+                - customValidation: ''
+                - maxCount: null
+                - hideValidationMessage: false
+                - text: Browse
+                - validationMessage: ''
+                - showInEditor: false
+                - parsing: false
+                - tooltipText: ''
+                - formDataKey: '{{ self.id }}'
+                - value:
+                    array: []
+                - minSize: ''
+                - styleVariant: outline
+                - _validate: false
+                - invalid: false
+                - files:
+                    array: []
+                - iconBefore: bold/programming-browser-search
+                - events:
+                    ordered: []
+                - loading: false
+                - loaderPosition: auto
+                - disabled: false
+                - minCount: null
+                - maintainSpaceWhenHidden: false
+                - required: false
+            style:
+              ordered: []
+            position2:
+              position2:
+                col: 8
+                height: 1
+                width: 3
+            createdAt: 2023-01-20T20:47:49.553Z
   rootScreen: null
   version: 2.101.6
   markdownLinkBehavior: auto
