@@ -62,7 +62,7 @@ appTemplate:
                 - downloadRawData: false
                 - showFetchingIndicator: true
                 - serverPaginated: false
-                - data: ''
+                - data: '{{fileButton1.pa}}'
                 - displayedData: null
                 - actionButtons: []
                 - actionButtonSelectsRow: true
