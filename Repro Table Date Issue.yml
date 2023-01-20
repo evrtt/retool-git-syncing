@@ -221,7 +221,8 @@ appTemplate:
                 - sort: null
                 - _columns: []
                 - sortByRawValue:
-                    ordered: []
+                    ordered:
+                      - data: false
                 - calculatedColumns: []
                 - selectedRow:
                     object:
