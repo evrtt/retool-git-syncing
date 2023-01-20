@@ -81,7 +81,7 @@ appTemplate:
 
                     data.unshift(null)
 
-                    return data
+                    return {data}
                 - value: ''
             createdAt: 2023-01-20T20:50:49.917Z
       - table1:
