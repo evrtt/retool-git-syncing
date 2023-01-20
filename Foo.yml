@@ -96,12 +96,6 @@ appTemplate:
                 - updateSetValueDynamically: false
                 - notificationDuration: ''
             createdAt: 2023-01-12T23:49:11.503Z
-  experimentalPerfFeatures:
-    object:
-      batchCommitModelEnabled: false
-      skipDepCycleCheckingEnabled: false
-      serverDepGraphEnabled: false
-      useRuntimeV2: false
   rootScreen: null
   version: 2.106.2
   markdownLinkBehavior: auto
