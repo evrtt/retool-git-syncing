@@ -143,7 +143,7 @@ appTemplate:
                 - downloadRawData: false
                 - showFetchingIndicator: true
                 - serverPaginated: false
-                - data: '{{tr}}'
+                - data: '{{transformer1.value}}'
                 - displayedData: null
                 - actionButtons: []
                 - actionButtonSelectsRow: true
