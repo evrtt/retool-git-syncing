@@ -340,7 +340,7 @@ appTemplate:
                 - sortByRawValue:
                     ordered:
                       - data: false
-                      - leave_end_date: false
+                      - leave_end_date: true
                 - calculatedColumns: []
                 - selectedRow:
                     object:
