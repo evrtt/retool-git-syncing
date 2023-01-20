@@ -109,7 +109,10 @@ appTemplate:
                 - saveChangesDisabled: ''
                 - columnTypeProperties:
                     ordered: []
-                - columnWidths: []
+                - columnWidths:
+                    - object:
+                        id: data
+                        value: 1261.6015625
                 - showSummaryFooter: false
                 - disableRowSelectInteraction: false
                 - columnWidthsMobile: []
