@@ -261,7 +261,7 @@ appTemplate:
                 - actionButtons: []
                 - actionButtonSelectsRow: true
                 - selectRowByDefault: true
-                - defaultSortByColumn: ''
+                - defaultSortByColumn: leave_end_date
                 - paginationOffset: 0
                 - columnAlignment:
                     ordered:
@@ -301,7 +301,7 @@ appTemplate:
                 - onRowSelect: ''
                 - showDownloadButton: true
                 - selectedIndex: null
-                - defaultSortDescending: false
+                - defaultSortDescending: true
                 - _sortedDisplayedDataIndices: null
                 - dynamicColumnSettings: null
                 - totalRowCount: ''
