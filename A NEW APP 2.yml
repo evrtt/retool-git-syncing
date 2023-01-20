@@ -243,7 +243,7 @@ appTemplate:
                 - showInEditor: false
                 - verticalAlign: center
                 - tooltipText: ''
-                - value: '{{}}'
+                - value: '{{textArea1.value}}'
                 - disableMarkdown: false
                 - overflowType: scroll
                 - maintainSpaceWhenHidden: false
