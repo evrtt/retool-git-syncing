@@ -104,6 +104,9 @@ appTemplate:
                       - data:
                           ordered:
                             - dateFormat: MMM d, yyyy
+                      - leave_end_date:
+                          ordered:
+                            - dateFormat: MMM d, yyyy
                 - columnWidths: []
                 - showSummaryFooter: false
                 - disableRowSelectInteraction: false
@@ -125,6 +128,7 @@ appTemplate:
                 - columnFormats:
                     ordered:
                       - data: default
+                      - leave_end_date: DateDataCell
                 - columnRestrictedEditing:
                     ordered: []
                 - showFilterButton: true
@@ -133,6 +137,7 @@ appTemplate:
                 - _columnSummaryTypes:
                     ordered:
                       - data: ''
+                      - leave_end_date: ''
                 - _columnsWithLegacyBackgroundColor:
                     set: []
                 - showAddRowButton: false
@@ -261,6 +266,7 @@ appTemplate:
                 - columnAlignment:
                     ordered:
                       - data: left
+                      - leave_end_date: left
                 - columnSummaries:
                     object: {}
                 - showBoxShadow: false
@@ -282,6 +288,7 @@ appTemplate:
                 - _columnSummaryValues:
                     ordered:
                       - data: ''
+                      - leave_end_date: ''
                 - checkboxRowSelect: true
                 - _compatibilityMode: false
                 - showColumnBorders: false
