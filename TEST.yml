@@ -23,7 +23,7 @@ appTemplate:
                 - resourceNameOverride: ''
                 - runWhenModelUpdates: true
                 - showFailureToaster: true
-                - query: select * from page_saves order by "createdAt" limit 10
+                - query: select * from page_saves order by "createdAt" DESC limit 10
                 - playgroundQueryUuid: ''
                 - playgroundQueryId: null
                 - error: null
