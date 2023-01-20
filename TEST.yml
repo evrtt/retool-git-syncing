@@ -241,10 +241,23 @@ appTemplate:
               ordered: []
             position2:
               position2:
-                col: 7
                 height: 8
-                width: 5
+                width: 12
             createdAt: 2023-01-20T18:54:18.829Z
+      - $main:
+          pluginTemplate:
+            id: $main
+            type: frame
+            subtype: Frame
+            template:
+              ordered:
+                - type: main
+                - sticky: false
+                - isHiddenOnDesktop: false
+                - isHiddenOnMobile: false
+            style:
+              ordered: []
+            createdAt: 2023-01-20T18:54:18.849Z
   rootScreen: null
   version: 2.103.7
   markdownLinkBehavior: auto
