@@ -106,7 +106,7 @@ appTemplate:
                             - dateFormat: MMM d, yyyy
                       - leave_end_date:
                           ordered:
-                            - dateFormat: MMM d, yyyy
+                            - dateFormat: ''
                 - columnWidths: []
                 - showSummaryFooter: false
                 - disableRowSelectInteraction: false
