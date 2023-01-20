@@ -100,7 +100,10 @@ appTemplate:
                 - rowHeight: standard
                 - saveChangesDisabled: ''
                 - columnTypeProperties:
-                    ordered: []
+                    ordered:
+                      - data:
+                          ordered:
+                            - dateFormat: MMM d, yyyy
                 - columnWidths: []
                 - showSummaryFooter: false
                 - disableRowSelectInteraction: false
@@ -119,14 +122,16 @@ appTemplate:
                     ordered: []
                 - allowMultiRowSelect: false
                 - columnFormats:
-                    ordered: []
+                    ordered:
+                      - data: DateDataCell
                 - columnRestrictedEditing:
                     ordered: []
                 - showFilterButton: true
                 - _columnVisibility:
                     ordered: []
                 - _columnSummaryTypes:
-                    ordered: []
+                    ordered:
+                      - data: ''
                 - _columnsWithLegacyBackgroundColor:
                     set: []
                 - showAddRowButton: false
@@ -152,7 +157,8 @@ appTemplate:
                 - defaultSortByColumn: ''
                 - paginationOffset: 0
                 - columnAlignment:
-                    ordered: []
+                    ordered:
+                      - data: left
                 - columnSummaries:
                     object: {}
                 - showBoxShadow: false
@@ -172,7 +178,8 @@ appTemplate:
                     object: {}
                 - sortedColumn: ''
                 - _columnSummaryValues:
-                    ordered: []
+                    ordered:
+                      - data: ''
                 - checkboxRowSelect: true
                 - _compatibilityMode: false
                 - showColumnBorders: false
