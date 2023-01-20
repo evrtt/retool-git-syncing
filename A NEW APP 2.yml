@@ -108,7 +108,7 @@ appTemplate:
                 - resourceNameOverride: ''
                 - runWhenModelUpdates: false
                 - showFailureToaster: true
-                - query: ''
+                - query: utils.copyToClipboard(textArea1.value)
                 - playgroundQueryUuid: ''
                 - playgroundQueryId: null
                 - error: null
