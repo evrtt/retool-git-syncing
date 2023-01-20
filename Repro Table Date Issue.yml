@@ -236,7 +236,7 @@ appTemplate:
               ordered: []
             position2:
               position2:
-                height: 8
+                height: 20
                 width: 8
             createdAt: 2023-01-20T20:47:40.260Z
       - $main:
