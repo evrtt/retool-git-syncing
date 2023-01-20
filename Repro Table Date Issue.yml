@@ -203,7 +203,8 @@ appTemplate:
                 - disableSorting:
                     ordered: []
                 - columnMappers:
-                    ordered: []
+                    ordered:
+                      - data: '{{self||''''}}'
                 - showClearSelection: false
                 - doubleClickToEdit: true
                 - overflowType: pagination
