@@ -254,7 +254,7 @@ appTemplate:
             template:
               ordered:
                 - formDataKey: '{{ self.id }}'
-                - value: '{{fileButton1.value}}'
+                - value: '{{fileButton1.parse}}'
                 - valid: true
             style:
               ordered: []
