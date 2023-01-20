@@ -229,7 +229,7 @@ appTemplate:
                 - _columns: []
                 - sortByRawValue:
                     ordered:
-                      - data: false
+                      - data: true
                 - calculatedColumns: []
                 - selectedRow:
                     object:
