@@ -205,7 +205,7 @@ appTemplate:
                 - parsedValue:
                     array: []
                 - iconAfter: ''
-                - parseFiles: false
+                - parseFiles: true
                 - maxSize: ''
                 - appendNewSelection: false
                 - selectionType: single
