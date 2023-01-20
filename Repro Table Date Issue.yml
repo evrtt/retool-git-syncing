@@ -222,7 +222,8 @@ appTemplate:
                 - sort: null
                 - _columns: []
                 - sortByRawValue:
-                    ordered: []
+                    ordered:
+                      - leave_end_date: false
                 - calculatedColumns: []
                 - selectedRow:
                     object:
