@@ -313,8 +313,12 @@ appTemplate:
             template:
               ordered:
                 - funcBody: >-
-                    return
-                    {{formatDataAsObject(fileButton1.parsedValue[0])['leave_end_date'].unshift(null)}}
+                    let data =
+                    {{formatDataAsObject(fileButton1.parsedValue[0])['leave_end_date']}}
+
+                    data.unshift(null)
+
+                    return data
                 - value: ''
             createdAt: 2023-01-20T20:50:49.917Z
   rootScreen: null
