@@ -211,7 +211,7 @@ appTemplate:
                     ordered: []
                 - columnMappers:
                     ordered:
-                      - data: '{{self||''''}}'
+                      - data: ''
                 - showClearSelection: false
                 - doubleClickToEdit: true
                 - overflowType: pagination
