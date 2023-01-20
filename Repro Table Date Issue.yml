@@ -114,6 +114,7 @@ appTemplate:
                 - alwaysShowPaginator: false
                 - columnColors:
                     ordered:
+                      - data: ''
                       - '0': ''
                       - '1': ''
                       - '2': ''
@@ -243,7 +244,7 @@ appTemplate:
               ordered: []
             position2:
               position2:
-                height: 8
+                height: 13.6
                 width: 8
             createdAt: 2023-01-20T20:53:30.397Z
   rootScreen: null
