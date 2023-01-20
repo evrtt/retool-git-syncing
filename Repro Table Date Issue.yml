@@ -313,11 +313,8 @@ appTemplate:
             template:
               ordered:
                 - funcBody: >-
-                    // Tip: assign your external references to variables instead
-                    of chaining off the curly brackets.
-
-
-                    return 5
+                    return
+                    {{formatDataAsObject(fileButton1.parsedValue[0])['leave_end_date'].unshift(null)}}
                 - value: ''
             createdAt: 2023-01-20T20:50:49.917Z
   rootScreen: null
