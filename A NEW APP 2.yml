@@ -229,6 +229,33 @@ appTemplate:
             style:
               ordered: []
             createdAt: 2023-01-20T18:09:30.922Z
+      - text1:
+          pluginTemplate:
+            id: text1
+            type: widget
+            subtype: TextWidget2
+            template:
+              ordered:
+                - heightType: auto
+                - horizontalAlign: left
+                - hidden: false
+                - imageWidth: fit
+                - showInEditor: false
+                - verticalAlign: center
+                - tooltipText: ''
+                - value: 👋 **Hello {{ current_user.firstName || 'friend' }}!**
+                - disableMarkdown: false
+                - overflowType: scroll
+                - maintainSpaceWhenHidden: false
+            style:
+              ordered: []
+            position2:
+              position2:
+                row: 4.4
+                col: 7
+                height: 0.6
+                width: 3
+            createdAt: 2023-01-20T18:09:54.132Z
   rootScreen: null
   version: 2.103.7
   markdownLinkBehavior: auto
