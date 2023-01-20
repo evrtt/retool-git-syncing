@@ -162,6 +162,59 @@ appTemplate:
                 - updateSetValueDynamically: false
                 - notificationDuration: ''
             createdAt: 2023-01-20T18:09:00.654Z
+      - textArea1:
+          pluginTemplate:
+            id: textArea1
+            type: widget
+            subtype: TextAreaWidget
+            template:
+              ordered:
+                - spellCheck: false
+                - readOnly: false
+                - autoResize: true
+                - showCharacterCount: false
+                - autoComplete: false
+                - maxLength: null
+                - hidden: false
+                - customValidation: ''
+                - hideValidationMessage: false
+                - minLines: 2
+                - validationMessage: ''
+                - showInEditor: false
+                - pattern: ''
+                - tooltipText: ''
+                - labelAlign: left
+                - formDataKey: '{{ self.id }}'
+                - value: ''
+                - labelCaption: ''
+                - labelWidth: '33'
+                - autoFill: ''
+                - placeholder: Enter value
+                - label: Label
+                - _validate: false
+                - labelWidthUnit: '%'
+                - invalid: false
+                - minLength: null
+                - inputTooltip: ''
+                - events:
+                    ordered: []
+                - autoCapitalize: none
+                - maxLines: null
+                - loading: false
+                - disabled: false
+                - labelPosition: top
+                - labelWrap: false
+                - maintainSpaceWhenHidden: false
+                - required: false
+            style:
+              ordered: []
+            position2:
+              position2:
+                row: 1
+                col: 6
+                height: 1
+                width: 4
+            createdAt: 2023-01-20T18:09:30.895Z
   rootScreen: null
   version: 2.103.7
   markdownLinkBehavior: auto
