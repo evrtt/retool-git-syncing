@@ -321,7 +321,7 @@ appTemplate:
                 - columnMappers:
                     ordered:
                       - data: ''
-                      - leave_end_date: '{{moment(self).format(''YYYY-MM-DD'')||''''}}'
+                      - leave_end_date: ''
                 - showClearSelection: false
                 - doubleClickToEdit: true
                 - overflowType: pagination
