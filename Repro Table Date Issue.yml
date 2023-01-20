@@ -314,6 +314,7 @@ appTemplate:
                 - columnMappers:
                     ordered:
                       - data: ''
+                      - leave_end_date: '{{self||''''}}'
                 - showClearSelection: false
                 - doubleClickToEdit: true
                 - overflowType: pagination
