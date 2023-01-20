@@ -146,7 +146,7 @@ appTemplate:
                 - downloadRawData: false
                 - showFetchingIndicator: true
                 - serverPaginated: false
-                - data: '{{fileButton1.parsedValue[0]}}'
+                - data: '{{(fileButton1.parsedValue[0])}}'
                 - displayedData: null
                 - actionButtons: []
                 - actionButtonSelectsRow: true
