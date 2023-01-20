@@ -171,7 +171,7 @@ appTemplate:
                     ordered: []
                 - showRefreshButton: true
                 - pageSize: '20'
-                - useDynamicColumnSettings: false
+                - useDynamicColumnSettings: '[]'
                 - actionButtonPosition: left
                 - dynamicRowHeights: false
                 - bulkUpdateAction: ''
